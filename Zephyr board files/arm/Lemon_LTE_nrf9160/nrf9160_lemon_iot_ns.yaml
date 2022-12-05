@@ -1,0 +1,17 @@
+identifier: nrf9160_lemon_iot_ns
+name: Lemon-IoT-NRF9160-Non-Secure
+type: mcu
+arch: arm
+toolchain:
+  - gnuarmemb
+  - xtools
+  - zephyr
+ram: 128
+flash: 192
+supported:
+  - gpio
+  - i2c
+  - pwm
+  - spi
+  - watchdog
+  - counter
