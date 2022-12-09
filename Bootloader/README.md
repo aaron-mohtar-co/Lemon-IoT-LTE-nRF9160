@@ -10,13 +10,13 @@ Both operating systems have their own managers to upload firmware – [MCUmgr](h
 
 Zephyr applications that are uploaded using the bootloader must be configured with CONFIG_BOOTLOADER_MCUBOOT=y. Setting this option reserves space for the bootloader and allows the application to be chain-loaded. This can do done by editing the prj.conf file of via Kconfig (Boot Options -> MCUboot bootloader support). 
 
-The MCUBOOT_SIGNATURE_KEY_FILE is set automatically via nRF Connect and uses the default key. This bootloaded is intended for development and educational purposes only. Device security should be considered for production.
+The MCUBOOT_SIGNATURE_KEY_FILE is set automatically via nRF Connect and uses the default key. This bootloader is intended for development and educational purposes only. Device security should be considered for production.
 
 ## Download and Setup
 
 Precompiled binaries of Newtmgr can be downloaded from https://dlcdn.apache.org/mynewt/. The Windows versions are compressed using .tgz.
 
-Alternatively, you can dowload the Windows version 1.10.0 from [above](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/raw/main/Bootloader/apache-mynewt-newtmgr-bin-windows-1.10.0.zip) in a more user friendly .zip form.
+Alternatively, you can download the Windows version 1.10.0 from [above](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/raw/main/Bootloader/apache-mynewt-newtmgr-bin-windows-1.10.0.zip) in a more user friendly .zip form.
 
 Extract into a suitable directory. 
 
@@ -38,6 +38,11 @@ To upload new firmware to your Lemon IoT LTE module:
 newtmgr -c serial image upload zephyr\app_update.bin
 ```
 
+## Reprogramming the bootloader
+
+All Lemon IoT LTE modules come pre-loaded with the MCUboot bootloader from the factory. 
+
+The bootloader is stored in write protected Flash memory. However, if the bootloader is overridden using a third party programmer, it can be restored by programming your Lemon IoT LTE module with the bootloader.hex via nRF Connect and a third party programmer such as a J-Link. 
 
 
 
