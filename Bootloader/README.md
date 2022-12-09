@@ -35,7 +35,13 @@ To upload new firmware to your Lemon IoT LTE module:
 3.	Execute the following, where zephyr\app_update.bin points to the firmware you want to upload
 
 ```
-newtmgr -c serial image upload zephyr\app_update.bin
+> newtmgr -c serial image upload zephyr\app_update.bin
+ 87.75 KiB / 87.75 KiB [======================================================================] 100.00% 1.26 KiB/s 1m9s
+Done
+```
+4. Reset the nRF9160. You can press the reset button on the Lemon IoT LTE module, or execute:
+```
+> newtmgr -c serial reset
 ```
 
 ## Reprogramming the bootloader
