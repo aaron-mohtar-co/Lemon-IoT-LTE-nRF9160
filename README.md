@@ -1,5 +1,5 @@
-# Lemon IoT LTE nrf9160 
-This repository is the primary location for support files for the Lemon IoT LTE nRF9160 module.
+# Lemon IoT LTE module
+This repository is the primary location for support files for the Lemon IoT LTE module. The module is based on a [nRF9160 low power SiP with integrated LTE-M/NB-IOT modem and GNSS](https://www.nordicsemi.com/products/nrf9160)
 
 ## Board Files
 
@@ -17,4 +17,6 @@ If you don’t have access to an ARM programmer (Segger J-Link, Nordic Developme
 
 Both the [zephyr OS](https://github.com/zephyrproject-rtos/zephyr/tree/main/samples) and [Nordic nRF SDK](https://github.com/nrfconnect/sdk-nrf/tree/main/samples/nrf9160) contain a wide variety of examples to base your next product on. 
 
-In addition to these examples, we have some specific examples for the Lemon IoT LTE module in the Examples folder.
+In addition to these examples, we have some specific examples for the Lemon IoT LTE module in the [Examples](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples) folder.
+
+
