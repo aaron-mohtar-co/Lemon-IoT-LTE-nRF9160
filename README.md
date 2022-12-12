@@ -17,7 +17,7 @@ The board files also contain the device tree. The following GPIO has been alloca
 
 <p align="center"><img src="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/raw/main/Zephyr%20board%20files/arm/lemon_lte_nrf9160/doc/img/lemon_iot_nrf9160_diagram.jpg" width=50% height=50%></p>
 
-Other I/O, for example, I2C, SPI & extra UART communication buses can be added by using DeviceTree overlays in your application project. This provides the end user with the most flexibility in allocating I/O. For an example on how to achieve this, please see the [I2C Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/i2c_sensor). 
+Other I/O, for example, I2C, SPI & extra UART communication buses can be added by using DeviceTree overlays in your application project. This provides the end user with the most flexibility in allocating I/O. For an example on how to achieve this, please see the [I2C Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/i2c_sensor) or [SPI Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/spi_sensor)
 
 The nRF9160 has four instantiated serial communications peripherals. Each can be configured as either I2C (Also known as TWI or Two Wire Interface), SPI or UART. The Lemon LTE module already has allocated the first serial peripheral to UART (&uart0). This requires additional serial peripherals to be allocated with unique instances, for example &i2c1. Using &i2c0 will conflict with the already allocated &uart0.     
 
