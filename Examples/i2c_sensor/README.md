@@ -2,6 +2,15 @@
 
 This example demonstrates how to use Device Tree overlays in your project to specify custom I/O allocation. It obtains the temperature & humidity from a I2C Sensirion [SHTC3](https://sensirion.com/products/catalog/SHTC3/) sensor connected to pins 30 (SDA) and pins 31 (SCL). 
 
+```
+*** Booting Zephyr OS build v3.2.99-ncs1 ***
+Found device SHTC3. Reading sensor data
+22.32 degC, 43.83% RH
+22.32 degC, 43.85% RH
+22.32 degC, 43.89% RH
+22.32 degC, 43.89% RH
+```
+
 The nRF9160 has four instantiated serial communications peripherals. Each can be configured as either I2C (also known as TWI or Two Wire Interface), SPI or UART. The Lemon LTE module has allocated the first serial peripheral to UART (&uart0). 
 
 Rather than constraining the developer to using pre-allocated peripherals, buses and GPIO, this allows flexibility in allocating resources suitable for your application. One application may require four UART ports, while a different one may require three I2C ports.
