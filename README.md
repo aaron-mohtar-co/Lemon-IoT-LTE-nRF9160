@@ -17,6 +17,8 @@ The board files also contain the device tree. The following GPIO has been alloca
 
 <p align="center"><img src="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/raw/main/Zephyr%20board%20files/arm/lemon_lte_rnf9160/doc/img/lemon_iot_nrf9160_diagram.jpg" width=50% height=50%></p>
 
+Other I/O such as I2C and SPI communication buses can be added by using DeviceTree overlays in your application project. This provides the end user with the most flexibility in allocating I/O. For an example on how to achieve this, please see the [I2C Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/i2c_sensor). 
+
 ## Serial Bootloader
 
 If you don’t have access to an ARM programmer (Segger J-Link, Nordic Development Kit etc), then the most cost-effective method of programming the Lemon IoT LTE module is via the pre-installed serial bootloader. Information on the serial bootloader can be found in the [bootloader/](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Bootloader) directory.
