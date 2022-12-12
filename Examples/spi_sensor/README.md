@@ -1,4 +1,4 @@
-# SPI Sensor Example (Amalog Devices ADXL345)
+# SPI Sensor Example (Analog Devices ADXL345)
 
 This example demonstrates how to use Device Tree overlays in your project to specify custom I/O allocation. It obtains the acceleration from a SPI Analog Devices [ADXL345](https://www.analog.com/en/products/adxl345.html) sensor. 
 
