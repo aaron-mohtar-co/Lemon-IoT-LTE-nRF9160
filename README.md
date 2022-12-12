@@ -11,7 +11,7 @@ Before you can target the Lemon IoT LTE module in Zephyr (nRF Connect SDK), boar
 
 Two targets exist 
 * Lemon IoT NRF9160 and 
-* Lemon IoT NRF9160 non secure.
+* Lemon IoT NRF9160 non-secure.
 
 The board files also contain the device tree. The following GPIO has been allocated on the following pins:
 
@@ -19,7 +19,7 @@ The board files also contain the device tree. The following GPIO has been alloca
 
 Other I/O, for example, I2C, SPI & extra UART communication buses can be added by using DeviceTree overlays in your application project. This provides the end user with the most flexibility in allocating I/O. For an example on how to achieve this, please see the [I2C Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/i2c_sensor). 
 
-I2C (TWI - Two Wire Interface), SPI and UART peripherals on the nRF9160 share resources. The nRF9160 have four instantiated serial communications peripherals, each configured as either TWI, SPI or UART. The Lemon LTE module has already allocated the first serial peripheral to UART (&uart0). This means additional serial peripherals need to be allocated with unique instances, for example &i2c0 will conflict with the already allocated &uart0 - you will need to use &i2c1.     
+The nRF9160 has four instantiated serial communications peripherals. Each can be configured as either I2C (Also known as TWI or Two Wire Interface), SPI or UART. The Lemon LTE module already has allocated the first serial peripheral to UART (&uart0). This requires additional serial peripherals to be allocated with unique instances, for example &i2c1. Using &i2c0 will conflict with the already allocated &uart0.     
 
 ## Serial Bootloader
 
