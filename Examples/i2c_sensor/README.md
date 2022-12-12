@@ -61,7 +61,7 @@ The I2C2 (&i2c2) node sets up the I2C2 controller as a 'nrf-TWIM' or Nordic Two 
 
 ## Zephyr Sensor Subsystem
 
-The Zephyr RTOS includes a [sensor subsystem]((https://docs.zephyrproject.org/latest/hardware/peripherals/sensor.html) with built-in support for common sensors such as the [Sensirion SHTC3](https://sensirion.com/products/catalog/SHTC3/).  
+The Zephyr RTOS includes a [sensor subsystem](https://docs.zephyrproject.org/latest/hardware/peripherals/sensor.html) with built-in support for common sensors such as the [Sensirion SHTC3](https://sensirion.com/products/catalog/SHTC3/).  
 
 Configuration of the sensor (type, I2C address, measurement mode etc) is set up in the Device Tree as a subnode of the allocated I2C bus - see below. The application can then use a common API, sensor_sample_fetch(), sensor_channel_get() to read the sensor.
 
