@@ -70,7 +70,7 @@ The SPI2 (&spi2) node sets up the SPI controller as a 'nrf-spim' or Nordic SPI M
 
 ## Zephyr Sensor Subsystem
 
-The Zephyr RTOS includes a [sensor subsystem](https://docs.zephyrproject.org/latest/hardware/peripherals/sensor.html) with built-in support for common sensors such as the [Sensirion SHTC3](https://sensirion.com/products/catalog/SHTC3/).  
+The Zephyr RTOS includes a [sensor subsystem](https://docs.zephyrproject.org/latest/hardware/peripherals/sensor.html) with built-in support for common sensors such as the [Analog ADXL345](https://www.analog.com/en/products/adxl345.html).  
 
 Configuration of the sensor (chip select, clock-frequency etc) is set up in the Device Tree as a subnode of the allocated SPI bus - see below. The application can then use a common API, sensor_sample_fetch(), sensor_channel_get() to read the sensor.
 
