@@ -55,7 +55,7 @@ The overlay file for this project looks like:
 };
 ```
 
-The pin control (&pinctrl) node sets up the GPIO pin numbering including connecting any internal pull-up/down resistors. In this example, SDA is allocated pin 30 and SCL pin 31. 
+The pin control (&pinctrl) node sets up the GPIO pin numbering including connecting any internal pull-up/down resistors. In this example, SDA is allocated pin 30 and SCL pin 31. Documentation on Nordic specific pinctrl properties can be found [here](https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/ug_pinctrl.html).
 
 The I2C2 (&i2c2) node sets up the I2C2 controller as a 'nrf-TWIM' or Nordic Two Wire Interface in Master mode with a clock frequency of 100kHz. 
 
