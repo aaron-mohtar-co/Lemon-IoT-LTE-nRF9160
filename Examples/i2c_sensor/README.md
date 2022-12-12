@@ -8,7 +8,7 @@ Rather than constraining the developer to using pre-allocated peripherals, buses
 
 ## DeviceTree overlays
 
-On the Zephyr RTOS, I/O and peripherals are allocated in the Device Tree. The board files (located in zephyr/boards/arm/lemon_lte_nrf9160) generally hold the Device Tree specific to I/O for a given board. This makes sense as the printed circuit board physically connects the pins of the nRF9160 to the peripherals on the board, for example temperature and humidity sensors, accelerometers etc. 
+On the Zephyr RTOS, I/O and peripherals are allocated in the Device Tree. The board files (located in zephyr/boards/arm/lemon_lte_nrf9160) generally hold the Device Tree specific to I/O for a given board. This makes sense as the printed circuit board physically connects the pins of the nRF9160 to the peripherals located on the board, for example temperature and humidity sensors, accelerometers etc. 
 
 However, this Device Tree can be modified or further defined by using a Device Tree overlay at the project level. Where you have a flexible module like the Lemon IoT LTE, this makes the most sense.
 
@@ -75,4 +75,4 @@ Configuration of the sensor (type, I2C address, measurement mode etc) is set up 
 	};
 ```
 
-Details of the node properties can be found at [Sensirion SHTCx Node Properties](https://docs.zephyrproject.org/3.0.0/reference/devicetree/bindings/sensor/sensirion%2Cshtcx.html)
+Details of the node properties can be found at [Sensirion SHTCx Node Properties](https://docs.zephyrproject.org/3.0.0/reference/devicetree/bindings/sensor/sensirion%2Cshtcx.html).
