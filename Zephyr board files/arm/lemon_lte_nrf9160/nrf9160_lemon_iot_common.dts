@@ -91,13 +91,6 @@
 	pinctrl-names = "default", "sleep";
 };
 
-&uart2 {
-	current-speed = <115200>;
-	pinctrl-0 = <&uart2_default>;
-	pinctrl-1 = <&uart2_sleep>;
-	pinctrl-names = "default", "sleep";
-};
-
 &pwm0 {
 	status = "okay";
 	pinctrl-0 = <&pwm0_default>;
