@@ -13,13 +13,13 @@ Found device SHTC3. Reading sensor data
 
 The nRF9160 has four instantiated serial communications peripherals. Each can be configured as either I2C (also known as TWI or Two Wire Interface), SPI or UART. The Lemon LTE module has allocated the first serial peripheral to UART (&uart0). 
 
-Rather than constraining the developer to using pre-allocated peripherals, buses and GPIO, this allows flexibility in allocating resources suitable for your application. One application may require four UART ports, while a different one may require three I2C ports.
+Rather than constraining the developer to using pre-allocated peripherals, buses and GPIO, overlays allows flexibility in allocating resources suitable for your specific application. One application may require four UART ports, while a different one may require three I2C ports.
 
 ## DeviceTree overlays
 
 On the Zephyr RTOS, I/O and peripherals are allocated in the Device Tree. The board files (located in zephyr/boards/arm/lemon_lte_nrf9160) generally hold the Device Tree specific to I/O for a given board. This makes sense as the printed circuit board physically connects the pins of the nRF9160 to the peripherals located on the board, for example temperature and humidity sensors, accelerometers etc. 
 
-However, this Device Tree can be modified or further defined by using a Device Tree overlay at the project level. Where you have a flexible module like the Lemon IoT LTE, this makes the most sense.
+However, this Device Tree can be modified or further defined by using a Device Tree overlay at the project level. When you have a flexible module like the Lemon IoT LTE, this makes the most sense.
 
 The Device Tree overlay sits in your project within the [board](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/i2c_sensor/boards) folder. The Device Tree file should be given the same name as your board and an extension of 'overlay' e.g. nrf9160_lemon_iot_ns.overlay.
 
@@ -72,7 +72,7 @@ The I2C2 (&i2c2) node sets up the I2C2 controller as a 'nrf-TWIM' or Nordic Two 
 
 The Zephyr RTOS includes a [sensor subsystem](https://docs.zephyrproject.org/latest/hardware/peripherals/sensor.html) with built-in support for common sensors such as the [Sensirion SHTC3](https://sensirion.com/products/catalog/SHTC3/).  
 
-Configuration of the sensor (type, I2C address, measurement mode etc) is set up in the Device Tree as a subnode of the allocated I2C bus - see below. The application can then use a common API, sensor_sample_fetch(), sensor_channel_get() to read the sensor.
+Configuration of the sensor (type, I2C address, measurement mode etc) is set up in the Device Tree as a subnode of the allocated I2C bus - see below. The Zephyr application can then use a common API - sensor_sample_fetch() and sensor_channel_get() to read the sensor.
 
 ```
 	shtcx@70 {
