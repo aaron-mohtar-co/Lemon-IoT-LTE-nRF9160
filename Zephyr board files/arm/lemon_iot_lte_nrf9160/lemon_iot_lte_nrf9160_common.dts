@@ -1,13 +1,14 @@
 /*
+ * Copyright (c) 2022-2023 Aaron Mohtar & Co Pty Ltd
  * Copyright (c) 2018-2020 Nordic Semiconductor ASA
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-#include "nrf9160_lemon_iot_common-pinctrl.dtsi"
+#include "lemon_iot_lte_nrf9160_common-pinctrl.dtsi"
 
 / {
-	model = "Lemon IoT nRF9160 LTE";
-	compatible = "lemon,iot-nrf9160";
+	model = "Lemon IoT LTE nRF9160";
+	compatible = "lemon-iot,lte-nrf9160";
 
 	chosen {
 		zephyr,console = &uart0;
@@ -19,15 +20,15 @@
 		compatible = "gpio-leds";
 		led0: led_0 {
 			gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
-			label = "Red LED 1";
+			label = "Red LED 0";
 		};
 		led1: led_1 {
 			gpios = <&gpio0 3 GPIO_ACTIVE_LOW>;
-			label = "Green LED 2";
+			label = "Green LED 1";
 		};
 		led2: led_2 {
 			gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
-			label = "Blue LED 3";
+			label = "Blue LED 2";
 		};
 	};
 
@@ -166,4 +167,4 @@
 };
 
 /* Include partition configuration file */
-#include "nrf9160_lemon_iot_partition_conf.dts"
+#include "lemon_iot_lte_nrf9160_partition_conf.dts"

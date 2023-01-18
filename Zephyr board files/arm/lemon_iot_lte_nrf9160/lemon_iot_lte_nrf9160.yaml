@@ -1,5 +1,5 @@
-identifier: nrf9160_lemon_iot
-name: Lemon-IoT-NRF9160
+identifier: lemon_iot_lte_nrf9160
+name: Lemon-IoT-LTE-nRF9160
 type: mcu
 arch: arm
 toolchain:
