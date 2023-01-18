@@ -3,7 +3,7 @@ This repository is the primary location for support files for the Lemon IoT LTE 
 
 The module is based on a [nRF9160 low power SiP with integrated LTE-M/NB-IOT modem and GNSS](https://www.nordicsemi.com/products/nrf9160) from Nordic Semiconductor.
 
-<p align="center"><img src="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/raw/main/Zephyr%20board%20files/arm/lemon_lte_nrf9160/doc/img/lemon_iot_nrf9160_render.jpg" width=50% height=50%></p>
+<p align="center"><img src="https://raw.githubusercontent.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/main/Zephyr%20board%20files/arm/lemon_iot_lte_nrf9160/doc/img/lemon_iot_lte_nrf9160_render.jpg" width=50% height=50%></p>
 
 ## Board Files
 
@@ -15,7 +15,7 @@ Two targets exist
 
 The board files also contain the device tree. The following GPIO has been allocated on the following pins:
 
-<p align="center"><img src="https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/raw/main/Zephyr%20board%20files/arm/lemon_lte_nrf9160/doc/img/lemon_iot_nrf9160_diagram.jpg" width=50% height=50%></p>
+<p align="center"><img src="https://raw.githubusercontent.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/main/Zephyr%20board%20files/arm/lemon_iot_lte_nrf9160/doc/img/lemon_iot_lte_nrf9160_diagram.jpg" width=50% height=50%></p>
 
 Other I/O, for example, I2C, SPI & extra UART communication buses can be added by using DeviceTree overlays in your application project. This provides the end user with the most flexibility in allocating I/O. For an example on how to achieve this, please see the [I2C Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/i2c_sensor) or [SPI Sensor Example](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Examples/spi_sensor)
 
