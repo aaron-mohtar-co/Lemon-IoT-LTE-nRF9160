@@ -1,13 +1,13 @@
-# Lemon IoT LTE module
-This repository is the primary location for support files for the Lemon IoT LTE module. 
+# Lemon IoT LTE Board
+This repository is the primary location for support files for the [Lemon IoT LTE nRF9160 Board](https://lemon-iot.com/index.php/product/lemon-iot-lte-cat-m1-nb-iot-nrf9160-board/). 
 
-The module is based on a [nRF9160 low power SiP with integrated LTE-M/NB-IOT modem and GNSS](https://www.nordicsemi.com/products/nrf9160) from Nordic Semiconductor.
+The board is based on a [nRF9160 low power SiP with integrated LTE-M/NB-IOT modem and GNSS](https://www.nordicsemi.com/products/nrf9160) from Nordic Semiconductor.
 
 <p align="center"><img src="https://raw.githubusercontent.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/main/Zephyr%20board%20files/arm/lemon_iot_lte_nrf9160/doc/img/lemon_iot_lte_nrf9160_render.jpg" width=50% height=50%></p>
 
 ## Board Files
 
-Before you can target the Lemon IoT LTE module in Zephyr (nRF Connect SDK), board files will need to be downloaded from the [Zephyr board files](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Zephyr%20board%20files) folder and placed in the \Nordic\<SDK version>\zephyr\boards\arm folder.
+Before you can target the Lemon IoT LTE board in Zephyr (nRF Connect SDK), board files will need to be downloaded from the [Zephyr board files](https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nrf9160/tree/main/Zephyr%20board%20files) folder and placed in the \Nordic\<SDK version>\zephyr\boards\arm folder.
 
 Two targets exist 
 * Lemon IoT NRF9160 and 
