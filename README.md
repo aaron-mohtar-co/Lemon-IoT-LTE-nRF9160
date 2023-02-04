@@ -1,5 +1,5 @@
 # Lemon IoT LTE Board
-This repository is the primary location for support files for the [Lemon IoT LTE nRF9160 Board](https://lemon-iot.com/index.php/product/lemon-iot-lte-cat-m1-nb-iot-nrf9160-board/). 
+This repository is the official location for support files for the [Lemon IoT LTE nRF9160 Board](https://lemon-iot.com/index.php/product/lemon-iot-lte-cat-m1-nb-iot-nrf9160-board/). 
 
 The board is based on a [nRF9160 low power SiP with integrated LTE-M/NB-IOT modem and GNSS](https://www.nordicsemi.com/products/nrf9160) from Nordic Semiconductor.
 
