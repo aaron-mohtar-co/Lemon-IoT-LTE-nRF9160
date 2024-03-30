@@ -1,5 +1,5 @@
 
-#include <zephyr/zephyr.h>
+#include <zephyr/kernel.h>
 #include <zephyr/sys/printk.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/pwm.h>
@@ -22,13 +22,14 @@ static struct gpio_callback button_cb_data;
 
 static struct k_work led_indicator_work;
 static void led_indicator_work_function(struct k_work *work);
+void fade_pwm_led(const struct pwm_dt_spec *spec);
 
 void button_callback(const struct device *dev, struct gpio_callback *cb, uint32_t pins)
 {
 	k_sem_give(&pb_pushed);
 }
 
-void main(void)
+int main(void)
 {
 	int ret;
 	led_enabled = true;
