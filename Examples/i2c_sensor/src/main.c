@@ -16,20 +16,20 @@
 #include <zephyr/drivers/sensor.h>
 #include <stdio.h>
 
-void main(void)
+int main(void)
 {
- 	// Get a device structure from a devicetree node with compatible
- 	// "sensirion,shtcx". 
+	// Get a device structure from a devicetree node with compatible
+	// "sensirion,shtcx".
 	const struct device *dev = DEVICE_DT_GET_ANY(sensirion_shtcx);
 
 	if (dev == NULL) {
 		printk("\nError: No devicetree node found for Sensirion SHTCx.\n");
-		return;
+		return -1;
 	}
 
 	if (!device_is_ready(dev)) {
 		printf("Device %s is not ready\n", dev->name);
-		return;
+		return -1;
 	}
 
 	printk("Found device %s. Reading sensor data\n", dev->name);
